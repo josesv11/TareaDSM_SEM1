@@ -1,10 +1,13 @@
 fun main() {
-    printWeatherForCity()
+    printWeatherForCity("Ankara", 27, 31, 82)
+    printWeatherForCity("Tokyo", 32, 36, 10)
+    printWeatherForCity("Cape Town", 59, 64, 2)
+    printWeatherForCity("Guatemala City", 50, 55, 7)
 }
 
-fun printWeatherForCity() {
-    println("City: Ankara")
-    println("Low temperature: 27, High temperature: 31")
-    println("Chance of rain: 82%")
+fun printWeatherForCity(cityName: String, lowTemp: Int, highTemp: Int, chanceOfRain: Int) {
+    println("City: $cityName")
+    println("Low temperature: $lowTemp, High temperature: $highTemp")
+    println("Chance of rain: $chanceOfRain%")
     println()
 }
